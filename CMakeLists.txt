@@ -20,4 +20,5 @@ include(test/CMakeLists.txt)
 add_executable(remote_fnirs main.cpp
         src/structure_camera/get_depth_frame_Structure.cpp
         src/beer_lamberts_law/calculate_baseline.cpp
+        src/beer_lamberts_law/get_hbb_hbo.cpp
         )

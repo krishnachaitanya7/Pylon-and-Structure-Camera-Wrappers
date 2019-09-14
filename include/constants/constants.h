@@ -8,8 +8,7 @@
  * */
 class DepthCamera_Constants{
 public:
-    int test1 = 0;
-    int test2 = 2;
+    std::string face_ref_path;
 };
 
 class CMOSCamera_Constants{
@@ -18,6 +17,21 @@ class CMOSCamera_Constants{
 };
 
 class BeerLambert_Constants{
+    /*
+     * Adopted from beer lambert law
+     * formula photo in the repo
+     * */
+public:
+    // Deoxy Hb Absorption Values
+    double alpha_hbo_685nm {0.09646034};
+    double alpha_hbo_830nm {0.2320466};
+    // Oxy Hb Absorption Values
+    double alpha_hhb_685nm {0.5382837};
+    double alpha_hhb_830nm {0.1791653};
+
+};
+
+class DataSaver_Constants{
 
 
 };
