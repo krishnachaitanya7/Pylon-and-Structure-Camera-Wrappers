@@ -1,1 +1,3 @@
-# remote_fnirs
+# Remote fNIRS
+
+This is my Master's thesis. Hell Yeah!
