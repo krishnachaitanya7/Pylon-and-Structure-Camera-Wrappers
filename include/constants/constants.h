@@ -17,6 +17,8 @@ class CMOSCamera_Constants{
 public:
     // As there are total 2 CMOS cameras in the lab
     int total_cmos_cameras {2};
+    int nm685_camera {0};
+    int nm830_camera {1};
 
 
 };

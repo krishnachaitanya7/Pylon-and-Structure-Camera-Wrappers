@@ -7,8 +7,8 @@
 
 int main() {
     try {
-        DepthCamera_Constants depthCameraConstants;
-        structure_io_depthframe dpt_frame;
+//        structure_io_depthframe dpt_frame;
+            pylon_camera_utils cmos_camera;
     } catch(const std::runtime_error& error){
         // Your Data Saving Code goes here
         // So that you don't lose data for stupid run time errors
