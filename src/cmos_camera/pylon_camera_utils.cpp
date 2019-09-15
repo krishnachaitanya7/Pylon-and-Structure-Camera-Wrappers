@@ -18,6 +18,10 @@ void pylon_camera_utils::cmos_cameras_initialization() {
 
         GenApi::INodeMap& nodemap0 = cameras[0].GetNodeMap();
         GenApi::INodeMap& nodemap1 = cameras[1].GetNodeMap();
+        CEnumParameter pixelFormat0(nodemap0, "PixelFormat");
+        pixelFormat0.SetValue( "Mono12");
+        CEnumParameter pixelFormat1(nodemap1, "PixelFormat");
+        pixelFormat1.SetValue( "Mono12");
 
 
     }catch (const GenericException &e){
