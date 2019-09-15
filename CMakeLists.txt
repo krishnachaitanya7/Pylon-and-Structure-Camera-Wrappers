@@ -2,8 +2,8 @@ project(RemotefNIRS)
 set(CMAKE_CXX_STANDARD 14)
 cmake_minimum_required(VERSION 3.14)
 ## Find Packages
-find_package(OpenCV REQUIRED)
-find_package(PCL REQUIRED)
+#find_package(OpenCV REQUIRED)
+#find_package(PCL REQUIRED)
 ##############
 # Include Directories
 include_directories($(PROJECT_SOURCE_DIR)/include/cmos_camera)
@@ -11,6 +11,7 @@ include_directories($(PROJECT_SOURCE_DIR)/include/constants)
 include_directories($(PROJECT_SOURCE_DIR)/include/structure_camera)
 include_directories($(PROJECT_SOURCE_DIR)/include/beer_lamberts_law)
 include_directories(/opt/pylon5/include)
+include_directories(external_libraries/gnuplot-iostream)
 ###############
 # Link Directories
 link_directories(/opt/pylon5/lib64)
