@@ -8,7 +8,9 @@
  * */
 class DepthCamera_Constants{
 public:
-    std::string face_ref_path;
+    const char *face_ref_path {"/home/shine/CLionProjects/Structure-Sensor-ICP/cmake-build-debug/Ref.ply"};
+    const char *current_frame_path {"/home/shine/CLionProjects/Structure-Sensor-ICP/cmake-build-debug/Ref1.ply"};
+    double fitness_max {10.0};
 };
 
 class CMOSCamera_Constants{
