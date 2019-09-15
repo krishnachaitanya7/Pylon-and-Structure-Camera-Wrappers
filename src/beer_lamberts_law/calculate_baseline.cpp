@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 
 calculate_baseline::calculate_baseline(std::vector<int> &baseline_values) {
-    calculate_baseline::private_baseline_values = baseline_values;
+    this->private_baseline_values = baseline_values;
 }
 
 double calculate_baseline::get_baseline_value(){

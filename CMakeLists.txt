@@ -10,7 +10,11 @@ include_directories($(PROJECT_SOURCE_DIR)/include/cmos_camera)
 include_directories($(PROJECT_SOURCE_DIR)/include/constants)
 include_directories($(PROJECT_SOURCE_DIR)/include/structure_camera)
 include_directories($(PROJECT_SOURCE_DIR)/include/beer_lamberts_law)
+include_directories(/opt/pylon5/include)
 ###############
+# Link Directories
+link_directories(/opt/pylon5/lib64)
+######################
 # Include CPP Source Files
 
 ##########
@@ -22,5 +26,5 @@ add_executable(remote_fnirs main.cpp
         src/structure_camera/get_depth_frame_Structure.cpp
         src/beer_lamberts_law/calculate_baseline.cpp
         src/beer_lamberts_law/get_hbb_hbo.cpp
-        )
-target_link_libraries(remote_fnirs ${PCL_LIBRARIES} Structure)
+        src/cmos_camera/pylon_camera_utils.cpp)
+target_link_libraries(remote_fnirs ${PCL_LIBRARIES} Structure pylonutility pylonbase GenApi_gcc_v3_1_Basler_pylon GCBase_gcc_v3_1_Basler_pylon)

@@ -2,6 +2,7 @@
 #include <constants.h>
 #include <get_depth_frame_Structure.h>
 #include <get_hbb_hbo.h>
+#include <pylon_camera_utils.h>
 #include <calculate_baseline.h>
 
 int main() {
