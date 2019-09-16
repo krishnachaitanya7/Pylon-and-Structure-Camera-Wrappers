@@ -28,4 +28,4 @@ add_executable(remote_fnirs main.cpp
         src/beer_lamberts_law/calculate_baseline.cpp
         src/beer_lamberts_law/get_hbb_hbo.cpp
         src/cmos_camera/pylon_camera_utils.cpp)
-target_link_libraries(remote_fnirs ${PCL_LIBRARIES} ${OpenCV_LIBS} Structure pylonutility pylonbase GenApi_gcc_v3_1_Basler_pylon GCBase_gcc_v3_1_Basler_pylon)
+target_link_libraries(remote_fnirs ${PCL_LIBRARIES} ${OpenCV_LIBS} Structure pthread pylonutility pylonbase GenApi_gcc_v3_1_Basler_pylon GCBase_gcc_v3_1_Basler_pylon)

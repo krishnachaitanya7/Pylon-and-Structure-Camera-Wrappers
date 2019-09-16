@@ -10,10 +10,9 @@
 using namespace cv;
 
 class pylon_camera_utils{
-private:
+public:
     Mat nm685_current_frame;
     Mat nm830_current_frame;
-public:
     void cmos_cameras_initialization();
     std::pair<int, int> get_center_of_blob(cv::Mat input);
     int get_intensity_xcm_from_blobcenter(cv::Mat input, std::pair<int, int> BlobCenter, float x);
