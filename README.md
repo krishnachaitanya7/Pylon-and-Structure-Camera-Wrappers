@@ -1,3 +1,3 @@
 # Remote fNIRS
 
-This is my Master's thesis. Hell Yeah!
+Pylon Camera and Structure Camera Wrappers. As the API they provide ain't so friendly :P
