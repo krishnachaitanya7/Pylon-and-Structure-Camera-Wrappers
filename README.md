@@ -1,6 +1,6 @@
 # Pylon Camera and Structure Camera Wrappers
 
-This is a wrapper around Structure io camera and basler cameras. 
+This is a wrapper around [Structure IO](https://structure.io/structure-core) camera and [Basler](https://www.baslerweb.com/en/) cameras. 
 All frame acquisition happens in a new thread spawned so that all frames are acquired real-time.
 Just after the initialization frame grabbing starts. So to find the working of the camera, for any USB or
 miscellaneous errors the code would give an error at initialization phase itself. The reason to make this repo is that the 
