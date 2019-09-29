@@ -7,16 +7,17 @@
 
 int main() {
     try {
-//        structure_io_depthframe dpt_frame;
-            pylon_camera_utils cmos_camera;
-            while(true) {
-                if (!cmos_camera.nm685_current_frame.empty() && !cmos_camera.nm830_current_frame.empty()) {
-                    cmos_camera.get_center_of_blob(cmos_camera.nm830_current_frame);
-                    break;
-                }
-
+        structure_io_depthframe dpt_frame;
+        depth_frame_latest = dpt_frame.get_depth_frame();
+        pylon_camera_utils cmos_camera;
+        while (true) {
+            if (!cmos_camera.nm685_current_frame.empty() && !cmos_camera.nm830_current_frame.empty()) {
+                cmos_camera.get_center_of_blob(cmos_camera.nm830_current_frame);
+                break;
             }
-    } catch(const std::runtime_error& error){
+
+        }
+    } catch (const std::runtime_error &error) {
         // Your Data Saving Code goes here
         // So that you don't lose data for stupid run time errors
         // And other Exceptions aren't caught, will include them in future
