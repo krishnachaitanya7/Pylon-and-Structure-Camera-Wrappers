@@ -3,7 +3,9 @@
 This is a wrapper around amazing Structure io camera and basler cameras. 
 All frame acquisition happen in a new thread spawned so that all frames are acquired real time.
 Just after the initialization frame grabbing starts. So to find the working of camera, for any USB or
-miscellaneous errors the code would give error at initialization phase itself.  
+miscellaneous errors the code would give error at initialization phase itself. The reason to ame this repo is because the 
+frame acquisition wasn't happening in a different thread or it wasn't easy to integrate into 
+complex C++ codes.  
 The API is as follows:
 
 ## Includes
