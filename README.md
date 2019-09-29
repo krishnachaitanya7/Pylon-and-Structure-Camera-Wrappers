@@ -4,7 +4,8 @@ This is a wrapper around [Structure IO](https://structure.io/structure-core) cam
 All frame acquisition happens in a new thread spawned so that all frames are acquired real-time.
 Just after the initialization frame grabbing starts. So to find the working of the camera, for any USB or
 miscellaneous errors the code would give an error at initialization phase itself. The reason to make this repo is that the 
-frame acquisition wasn't happening in a different thread or it wasn't easy to integrate into complex C++ codes like Intel RealSense, Hence.   
+frame acquisition wasn't happening in a different thread or it wasn't easy to integrate into complex C++ codes. Here I have tried to create to create 
+something Intel realSense does efficiently. Hence.   
 The API is as follows:
 
 ## Includes
